@@ -1,0 +1,13 @@
+.navbar-default {
+  background-image: url(../i/pttrn_dark.jpg);
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.navbar-default li {
+  background-image: url(../i/pttrn_dark.jpg);
+  transition: all 0.3s ease;
+}
+.navbar-default li:hover {
+  background-image: url(../i/pttrn_light.jpg);
+}
