@@ -1,3 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700&subset=latin,cyrillic);
+/* _variables.less */
+/* _buttons.less */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.btn-success {
+  background-color: #84cf2f;
+}
+.btn-success:hover {
+  background-color: #95e835;
+  border-color: #84cf2f;
+  color: #649c24;
+}
+.btn-success:active,
+.btn-success:focus {
+  background-color: #84cf2f;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  border-color: #95e835;
+  color: #fff;
+}
+.btn-lg {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+/* _navbar.less */
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding: 17px 0;
+  margin-right: 40px;
+}
+.navbar-brand img {
+  width: 165px;
+  height: 38px;
+}
+@media screen and (max-width: 370px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 130px;
+  }
+}
 .navbar-default {
   background-image: url(../i/pttrn_dark.jpg);
   border: none;
@@ -5,9 +62,134 @@
   text-transform: uppercase;
 }
 .navbar-default li {
-  background-image: url(../i/pttrn_dark.jpg);
+  background-position: bottom;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .navbar-default li:hover {
-  background-image: url(../i/pttrn_light.jpg);
+  background-color: rgba(140, 190, 255, 0.15);
+}
+.navbar-toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 9px 13px;
+  margin: 12px 0;
+  background-color: #526884;
+  border: none;
+}
+.navbar-toggle:hover {
+  background-color: #627c9e;
+}
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.b-enter {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin: 12px 0;
+}
+.b-enter:active,
+.b-enter:focus {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.enter-key {
+  background-color: #526884;
+  background-image: url(../i/ico_key.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.enter-key:hover {
+  background-color: #627c9e;
+}
+.user-avatar {
+  background-image: url(../i/user_avatar.png);
+}
+/* _index-promo.less */
+.promo {
+  background-image: url(../i/pttrn_dark.jpg);
+  color: #fff;
+}
+.promo-img {
+  margin-top: 16px;
+  width: 100%;
+}
+.promo-title {
+  font-size: 46px;
+  font-weight: 100;
+  margin-top: 50px;
+}
+.promo-description {
+  font-size: 15px;
+  color: #b2bccb;
+  line-height: 25px;
+  margin: 25px 0;
+}
+@media screen and (max-width: 1200px) {
+  .promo-title {
+    font-size: 30px;
+    margin-top: 16px;
+  }
+  .promo-description {
+    line-height: 22px;
+    margin: 15px 0;
+  }
+}
+.promo-inf {
+  padding-bottom: 25px;
+}
+@media screen and (max-width: 990px) {
+  .promo-img {
+    margin-top: 50px;
+  }
+  .promo-title {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+}
+.btn-promo {
+  color: #2e3c50;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.btn-promo:hover,
+.btn-promo:active,
+.btn-promo:focus {
+  color: #2e3c50;
+}
+.ico-github {
+  fill: #2e3c50;
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn-promo-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.promo-or {
+  margin-top: 23px;
+  display: inline-block;
+  font-size: 18px;
+  color: #566c86;
+  overflow: hidden;
+}
+.promo-or a {
+  color: #566c86;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+.promo-or a:hover {
+  color: #7290b8;
+}
+.promo-or a:active,
+.promo-or a:focus {
+  color: #1690da;
 }

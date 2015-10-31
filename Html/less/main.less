@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700&subset=latin,cyrillic);
+
+/* _variables.less */
+@green:           #84cf2f;
+@green-light:     #95e835;
+@green-dark:      #649c24;
+
+@blue:            #1690da;
+@blue-light:      #1aa7ff;
+@blue-dark:       #116da6;
+@blue-darkness:   #2e3c50;
+@blue-gray:       #566c86;
+
+/* _buttons.less */
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  outline:none;
+  transition: all 0.2s ease;
+}
+
+.btn-success {
+  background-color: @green;
+  &:hover {
+    background-color: @green-light;
+    border-color: @green;
+    color: @green-dark;
+  }
+  &:active, &:focus {
+    background-color: @green;
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    border-color: @green-light;
+    color: #fff;
+  }
+}
+
+.btn-lg {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+@import "_navbar.less";
+@import "_index-promo.less";

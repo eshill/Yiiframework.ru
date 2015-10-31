@@ -1,0 +1,76 @@
+
+/* _navbar.less */
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding: 17px 0;
+  margin-right: 40px;
+}
+.navbar-brand img {
+  width: 165px;
+  height: 38px;
+}
+@media screen and (max-width: 370px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 130px;
+  }
+}
+.navbar-default {
+  background-image: url(../i/pttrn_dark.jpg);
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.navbar-default li {
+  background-position: bottom;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.navbar-default li:hover {
+  background-color: rgba(140, 190, 255, 0.15);
+}
+.navbar-toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 9px 13px;
+  margin: 12px 0;
+  background-color: #526884;
+  border: none;
+}
+.navbar-toggle:hover {
+  background-color: #627c9e;
+}
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.b-enter {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin: 12px 0;
+}
+.b-enter:active,
+.b-enter:focus {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.enter-key {
+  background-color: #526884;
+  background-image: url(../i/ico_key.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.enter-key:hover {
+  background-color: #627c9e;
+}
+.user-avatar {
+  background-image: url(../i/user_avatar.png);
+}
