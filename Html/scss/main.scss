@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700&subset=latin,cyrillic);
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// _variables.scss
+
+$gray:            #e6e6e6;
+$gray-light:      #f2f2f2;
+
+$text-gray:       #505050;
+$text-gray-light: #888;
+
+$green:           #84cf2f;
+$green-light:     #95e835;
+$green-dark:      #649c24;
+
+$blue:            #1690da;
+$blue-light:      #1aa7ff;
+$blue-dark:       #116da6;
+$blue-darkness:   #2e3c50;
+$blue-gray:       #566c86;
+
+$red:             #f84823;
+
+// _buttons.scss
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  outline:none;
+  transition: all 0.1s ease;
+}
+
+.btn-default {
+  background-color: $gray-light;
+  color: $text-gray;
+  border-width: 1px;
+  &:hover {
+    background-color: transparent;
+    text-decoration: none;
+    border-color: $gray;
+    border-width: 1px;
+    color: $text-gray;
+  }
+  &:active, &:focus {
+    background-color: transparent;
+    text-decoration: none;
+    border-color: $blue;
+    border-width: 1px;
+    color: $blue;
+  }
+}
+
+.btn-success {
+  background-color: $green;
+  &:hover {
+    background-color: $green-light;
+    border-color: $green;
+    color: $green-dark;
+  }
+
+  &:active, &:focus {
+    background-color: $green !important;
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    border-color: $green-light !important;
+    color: #fff !important;
+    color: $green-dark !important;
+    outline: none !important;
+  }
+}
+
+.btn-border {
+  border-color: $green;
+  color: $green-dark;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $green;
+    color: #fff;
+  }
+
+  &:active, &:focus {
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    border-color: $green-light;
+  }
+}
+
+.btn-lg {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 45px;
+
+  &:active, &:focus {
+    line-height: 48px;
+  }
+}
+
+.btn-sm {
+  height: 25px;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+
+
+@import "_elements.scss"; // pagination, search (index & inside)
+@import "_navbar.scss";  // header navigation
+@import "_index-promo.scss";
+@import "_features.scss"; // features index page (fast, secure, professional)
+@import "_index_content.scss";
+@import "_footer.scss"; // all pages footer

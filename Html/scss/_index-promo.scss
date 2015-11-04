@@ -1,0 +1,103 @@
+// _index-promo.scss
+
+.promo {
+	background-image: url(../i/pttrn_dark.jpg);
+	color: #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.promo-img {
+	margin-top: 16px;
+	width: 100%;
+}
+
+.promo-title {
+	font-size: 46px;
+	font-weight: 100;
+	margin-top: 35px;
+}
+
+.promo-description {
+	font-size: 15px;
+	color: #b2bccb;
+	line-height: 25px;
+	margin: 25px 0;
+}
+
+@media screen and (max-width: 1200px) {
+	
+	.promo-title {
+		font-size: 30px;
+		margin-top: 16px;
+	}
+
+	.promo-description {
+		line-height: 22px;
+		margin: 15px 0;
+	}
+}
+
+.promo-inf {
+	padding-bottom: 25px;
+}
+
+@media screen and (max-width: 990px) {
+	
+	.promo-img {
+		margin-top: 50px;
+	}
+
+	.promo-title {
+		font-size: 28px;
+		margin-top: 10px;
+	}
+}
+
+.btn-promo {
+	color: $blue-darkness !important;
+	width: 50%;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-right: 20px;
+	&:hover, &:active, &:focus {
+		color: $blue-darkness !important;
+	}
+}
+
+.ico-github {
+	fill: $blue-darkness;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.btn-promo-title {
+	display:inline-block; 
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.promo-or {
+	margin-top: 23px;
+	display: inline-block;
+	font-size: 18px;
+	color: $blue-gray;
+	overflow: hidden;
+	a {
+		color: $blue-gray;
+		text-decoration: underline;
+		transition: all 0.2s ease;
+
+		&:hover {
+			color: #7290b8;
+		}
+		
+		&:active, &:focus {
+			color: $blue;
+		}
+	}
+}

@@ -1,0 +1,101 @@
+// _index_content.scss
+
+.btn-post {
+	position: absolute;
+	right: 25px;
+	margin-top: 52px;
+}
+
+@media screen and (max-width: 390px) {
+	
+	.btn-post {
+		display: none;
+	}
+}
+
+.post-section, .tweet-section {
+	font-size: 38px;
+	font-weight: 100;
+	margin: 50px 0 25px 0;
+	float: left;
+}
+
+.ico-rss-section {
+	display: block;
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	margin: 72px 0 0 10px;
+	float: left;
+	fill: #616161;
+	transition: all 0.1s ease;
+
+	&:hover {
+		fill:orange;
+	}
+}
+
+.ico-twitter-section {
+	display: block;
+	width: 29px;
+	height: 18px;
+	overflow: hidden;
+	margin: 70px 0 0 10px;
+	float: left;
+	fill: #616161;
+	transition: all 0.1s ease;
+
+	&:hover {
+		fill: $blue;
+	}
+}
+
+.i-twitter iframe {
+	height: 3000px !important;
+}
+
+.post-items {
+	clear: both;
+}
+
+.post-item {
+	margin-bottom: 50px;
+	overflow: hidden;
+
+	p {
+		color: $text-gray;
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+
+.post-title {
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+.post-info {
+	margin: 10px 0 25px 0;
+	font-size: 12px;
+	color: $text-gray-light;
+	line-height: 25px;
+}
+
+.margin-line {
+	margin: 0 10px;
+}
+
+.post-title-photo {
+	margin: 0 25px 25px 0;
+	display: block;
+	float: left;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.post-title-photo-clear {
+	float: none;
+}
