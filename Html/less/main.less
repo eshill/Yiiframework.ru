@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700&subset=latin,cyrillic);
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
 /* _variables.less */
 @gray:            #e6e6e6;
 @gray-light:      #f2f2f2;
@@ -64,10 +67,12 @@
   }
 
   &:active, &:focus {
-    background-color: @green;
+    background-color: @green !important;
     box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    border-color: @green-light;
-    color: #fff;
+    border-color: @green-light !important;
+    color: #fff !important;
+    color: @green-dark !important;
+    outline: none !important;
   }
 }
 
