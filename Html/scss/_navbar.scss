@@ -129,8 +129,14 @@
 	}
 }
 
-.navbar-default li:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
 	background-color: rgba(140, 190, 255, 0.15);
+}
+
+.navbar-default li:hover {
+	background-color: rgba(140, 190, 255, 0.1);
 }
 
 .b-enter {

@@ -5,6 +5,8 @@
 	padding: 50px 0 25px 0;
 	color: #fff;
 	line-height: 25px;
+	z-index: 100;
+	position: relative;
 }
 
 .yii-lable {
@@ -107,7 +109,7 @@
 	width: 44px;
 	height: 44px;
 	float: left;
-	margin-right: 50px;
+	margin-right: 25px;
 	display: block;
 	border: 2px solid #fff;
 	border-radius: 25px;

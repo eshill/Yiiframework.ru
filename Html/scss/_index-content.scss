@@ -61,10 +61,10 @@
 .post-item {
 	margin-bottom: 50px;
 	overflow: hidden;
+	color: $text-gray;
+	font-size: 16px;
 
 	p {
-		color: $text-gray;
-		font-size: 16px;
 		line-height: 25px;
 	}
 }
