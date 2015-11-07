@@ -98,7 +98,16 @@ table td {
 
 
 
+.page-wrapper {
+	clear: both;
+	min-height: 700px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
+	.row div {
+		z-index: 1;
+	}
+}
 
 
 .page-cont-col {

@@ -60,16 +60,6 @@
 	}
 }
 
-.page-wrapper {
-	clear: both;
-	min-height: 700px;
-	padding: 50px 0;
-
-	.row div {
-		z-index: 1;
-	}
-}
-
 .subnav {
 
 	ul {
@@ -123,11 +113,11 @@
 
 @media (max-width: 770px) {
 
-	.page-cont-col {
-		margin: 0 5%;
-		width: 90%;
-		font-size: 16px;
-	}
+	// .page-cont-col {
+	// 	margin: 0 5%;
+	// 	width: 90%;
+	// 	font-size: 16px;
+	// }
 
 	.subnav-all {
 		visibility: hidden;

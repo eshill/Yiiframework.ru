@@ -56,6 +56,14 @@ table td {
     box-shadow: transparent 0px 1px 1px 0px inset, rgba(23, 145, 218, 0.6) 0px 0px 10px 0px;
     border: 2px solid #fff; }
 
+.page-wrapper {
+  clear: both;
+  min-height: 700px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .page-wrapper .row div {
+    z-index: 1; }
+
 .page-cont-col {
   font-size: 16px;
   line-height: 25px;
@@ -750,13 +758,6 @@ table td {
     background-color: #fff;
     color: #888; }
 
-.page-wrapper {
-  clear: both;
-  min-height: 700px;
-  padding: 50px 0; }
-  .page-wrapper .row div {
-    z-index: 1; }
-
 .subnav ul {
   margin-left: 0;
   padding-left: 0; }
@@ -791,11 +792,6 @@ table td {
   display: none; }
 
 @media (max-width: 770px) {
-  .page-cont-col {
-    margin: 0 5%;
-    width: 90%;
-    font-size: 16px; }
-
   .subnav-all {
     visibility: hidden;
     height: 10px; }
