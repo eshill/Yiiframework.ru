@@ -78,6 +78,28 @@ table td {
 }
 
 
+// forms
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-control {
+	border: 2px solid $gray;
+	border-radius: 5px;
+	box-shadow: none;
+
+	&:focus {
+		box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, 
+		rgba(23, 145, 218, 0.6) 0px 0px 10px 0px;
+		border: 2px solid #fff;
+	}
+}
+
+
+
+
+
 
 .page-cont-col {
 	font-size: 16px;

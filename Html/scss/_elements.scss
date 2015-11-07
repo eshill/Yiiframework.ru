@@ -35,6 +35,8 @@
 	height: 50px;
 	position: absolute;
 	right: 0;
+	box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, 
+	rgba(255, 255, 255, 1) 0px 0px 10px 0px;
 }
 
 .title-stick {
@@ -176,7 +178,7 @@
 
 		&:focus {
 			border-color: #fff;
-			box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, rgba(23, 145, 218, 0.6) 0px 0px 8px 0px;
+			box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, rgba(23, 145, 218, 0.6) 0px 0px 10px 0px;
 		}
 	}
 }

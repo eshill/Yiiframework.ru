@@ -45,6 +45,17 @@ pre {
 table td {
   font-size: 14px; }
 
+.form-group {
+  margin-bottom: 25px; }
+
+.form-control {
+  border: 2px solid #e6e6e6;
+  border-radius: 5px;
+  box-shadow: none; }
+  .form-control:focus {
+    box-shadow: transparent 0px 1px 1px 0px inset, rgba(23, 145, 218, 0.6) 0px 0px 10px 0px;
+    border: 2px solid #fff; }
+
 .page-cont-col {
   font-size: 16px;
   line-height: 25px;
@@ -153,7 +164,8 @@ table td {
   width: 1170px;
   height: 50px;
   position: absolute;
-  right: 0; }
+  right: 0;
+  box-shadow: transparent 0px 1px 1px 0px inset, white 0px 0px 10px 0px; }
 
 .title-stick {
   opacity: 1; }
@@ -253,7 +265,7 @@ table td {
     padding-left: 50px; }
     .index-search input:focus {
       border-color: #fff;
-      box-shadow: transparent 0px 1px 1px 0px inset, rgba(23, 145, 218, 0.6) 0px 0px 8px 0px; }
+      box-shadow: transparent 0px 1px 1px 0px inset, rgba(23, 145, 218, 0.6) 0px 0px 10px 0px; }
 
 .alert {
   border-radius: 0;
