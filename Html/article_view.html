@@ -211,24 +211,88 @@
 						<ul>
 							<li>Удалён метод <a href="http://www.yiiframework.com/doc/api/CModel#safeAttributes">safeAttributes()</a>. Теперь безопасными атрибутами являются те, для которых объявлены соответствующие правила валидации в методе <a href="http://www.yiiframework.com/doc/api/CModel#rules">rules()</a> для конкретного сценария.</li>
 							<li>По умолчанию для всех связей, включённых в жадную загрузку, будет
-							сгенерировано и выполнено одно выражение с использованием JOIN. Если в основной
-							таблице есть опции запроса <code>LIMIT</code> или <code>OFFSET</code>, то сначала будет выполнен этот запрос, а затем другой SQL-запрос, который возвратит все связанные объекты.
-							Раньше, в версии 1.0.x, по умолчанию выполнялись <code>N+1</code> SQL-запросов, если
-							жадная загрузка включала <code>N</code> связей <code>HAS_MANY</code> или <code>MANY_MANY</code>.</li>
-						</ul>
+								сгенерировано и выполнено одно выражение с использованием JOIN. Если в основной
+								таблице есть опции запроса <code>LIMIT</code> или <code>OFFSET</code>, то сначала будет выполнен этот запрос, а затем другой SQL-запрос, который возвратит все связанные объекты.
+								Раньше, в версии 1.0.x, по умолчанию выполнялись <code>N+1</code> SQL-запросов, если
+								жадная загрузка включала <code>N</code> связей <code>HAS_MANY</code> или <code>MANY_MANY</code>.</li>
+							</ul>
 
-						<h3>Пример соединения с базой данных</h3>
-						<p>Для установления соединения с базой необходимо создать экземпляр класса CDbConnection и активировать его. Дополнительная информация, необходимая для подключения к БД (хост, порт, имя пользователя, пароль и т.д.), указывается в DSN (Data Source Name). В случае возникновения ошибки в процессе соединения с БД будет выброшено исключение (например, неверный DSN или неправильные имя пользователя/пароль).</p>
+							<h3>Пример соединения с базой данных</h3>
+							<p>Для установления соединения с базой необходимо создать экземпляр класса CDbConnection и активировать его. Дополнительная информация, необходимая для подключения к БД (хост, порт, имя пользователя, пароль и т.д.), указывается в DSN (Data Source Name). В случае возникновения ошибки в процессе соединения с БД будет выброшено исключение (например, неверный DSN или неправильные имя пользователя/пароль).</p>
 
-						<div class="b-code">
-							<pre>
-<span class="php-hl-var">$connection</span><span class="php-hl-code">=</span><span class="php-hl-reserved">new</span> <span class="php-hl-identifier">CDbConnection</span><span class="php-hl-brackets">(</span><span class="php-hl-var">$dsn</span><span class="php-hl-code">,</span><span class="php-hl-var">$username</span><span class="php-hl-code">,</span><span class="php-hl-var">$password</span><span class="php-hl-brackets">)</span><span class="php-hl-code">;
+							<div class="b-code">
+<pre><span class="php-hl-var">$connection</span><span class="php-hl-code">=</span><span class="php-hl-reserved">new</span> <span class="php-hl-identifier">CDbConnection</span><span class="php-hl-brackets">(</span><span class="php-hl-var">$dsn</span><span class="php-hl-code">,</span><span class="php-hl-var">$username</span><span class="php-hl-code">,</span><span class="php-hl-var">$password</span><span class="php-hl-brackets">)</span><span class="php-hl-code">;
 </span><span class="php-hl-comment">//</span><span class="php-hl-comment"> устанавливаем соединение</span>
 <span class="php-hl-comment">//</span><span class="php-hl-comment"> можно использовать конструкцию try…catch для перехвата возможных исключений</span>
 <span class="php-hl-var">$connection</span><span class="php-hl-code">-&gt;</span><span class="php-hl-identifier">active</span><span class="php-hl-code">=</span><span class="php-hl-reserved">true</span><span class="php-hl-code">;
 …
 </span><span class="php-hl-var">$connection</span><span class="php-hl-code">-&gt;</span><span class="php-hl-identifier">active</span><span class="php-hl-code">=</span><span class="php-hl-reserved">false</span><span class="php-hl-code">;  </span><span class="php-hl-comment">//</span><span class="php-hl-comment"> close connection</span></pre>
 						</div>
+
+						<h4>Таблица с данными</h4>
+
+						<table class="table">
+								<thead>
+								<tr>
+									<th></th>
+									<th>CakePHP</th>
+									<th>CodeIgniter</th>
+									<th>Yii</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>Простота</td>
+									<td>Не очень</td>
+									<td>Отлично</td>
+									<td>Очень хорошо</td>
+								</tr>
+								<tr>
+									<td>Документация</td>
+									<td>хорошо</td>
+									<td>Очень хорошо</td>
+									<td>Очень хорошо</td>
+								</tr>
+								<tr>
+									<td>Производительность</td>
+									<td>2</td>
+									<td>5</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>Гибкость</td>
+									<td>Бедненько</td>
+									<td>Очень хорошо</td>
+									<td>Очень хорошо</td>
+								</tr>
+								<tr>
+									<td>Безопасность</td>
+									<td>Не очень</td>
+									<td>Так себе</td>
+									<td>Очень хорошо</td>
+								</tr>
+								</tbody>
+							</table>
+
+							<div class="alert alert-warning alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								Gii доступен, начиная с версии 1.1.2. Ранее для тех же целей использовался уже упомянутый yiic. Подробнее yiic описан в разделе «<a href="">генерация CRUD при помощи yiic shell</a>»
+							</div>
+
+							<div class="alert alert-danger alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								Gii доступен, начиная с версии 1.1.2. Ранее для тех же целей использовался уже упомянутый yiic. Подробнее yiic описан в разделе «<a href="">генерация CRUD при помощи yiic shell</a>»
+							</div>
+
+							<div class="alert alert-success alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								Gii доступен, начиная с версии 1.1.2. Ранее для тех же целей использовался уже упомянутый yiic. Подробнее yiic описан в разделе «<a href="">генерация CRUD при помощи yiic shell</a>»
+							</div>
+							
+							<div class="alert alert-info alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								Gii доступен, начиная с версии 1.1.2. Ранее для тех же целей использовался уже упомянутый yiic. Подробнее yiic описан в разделе «<a href="">генерация CRUD при помощи yiic shell</a>»
+							</div>
 
 					</div>
 				</div>

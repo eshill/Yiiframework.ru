@@ -1,0 +1,161 @@
+// _docs.scss
+
+.sect-subtitle {
+	background-color: $gray-light;
+	z-index: 99;
+}
+
+.subtitle-text {
+	color: $text-gray-dark;
+	margin: 25px 0;
+	font-size: 24px;
+	line-height: 25px;
+}
+
+@media (max-width: 770px) {
+	.subtitle-text {
+		margin-bottom: 0;
+	}
+}
+
+.subtitle-stick {
+	opacity: 1;
+	
+	.subtitle-text {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.lang-group {
+		margin: 5px 0;
+	}
+}
+
+.lang-group {
+	margin: 25px 0;
+	line-height: 25px;
+	width: 100%;
+
+	.lang-item {
+		width: 50%;
+		display: block;
+		float: left;
+		border: 1px solid #fff;
+		text-align: center;
+
+		&:first-child {
+			border-radius: 5px 0 0 5px;
+		}
+
+		&:last-child {
+			border-radius: 0 5px 5px 0;
+		}
+	}
+
+	.active {
+		background-color: #fff;
+		color: $text-gray-light;
+	}
+}
+
+.page-wrapper {
+	clear: both;
+	min-height: 700px;
+	padding: 50px 0;
+
+	.row div {
+		z-index: 1;
+	}
+}
+
+.subnav {
+
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	.panel {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 30px;
+		box-shadow: none;
+		margin: 0;
+		border: 0;
+
+		a {
+			color: $text-gray-dark;
+		}
+
+		ul li {
+			padding: 5px 0 5px 25px;
+			border-left: 1px solid $gray;
+			font-size: 13px;
+			line-height: 15px;
+		}
+
+		.active {
+			border-left: 1px solid $text-gray-light;
+			a {
+				color: $text-gray-dark;
+				cursor: default;
+				text-decoration: none;
+			}
+		}
+
+		ul li a {
+			font-size: 14px;
+			font-weight: normal;
+			color: $blue;
+		}
+	}
+}
+
+.subnav-btn {
+	display: none;
+}
+
+@media (max-width: 770px) {
+
+	.page-cont-col {
+		margin: 0 5%;
+		width: 90%;
+		font-size: 16px;
+	}
+
+	.subnav-all {
+		visibility: hidden;
+		height: 10px;
+	}
+
+	.subnav-btn {
+		display: block;
+		text-align: center;
+		margin: -30px auto 0 auto;
+		cursor: pointer;
+		background-color: $blue;
+		line-height: 40px;
+		width: 90%;
+		color: #fff;
+	}
+
+	.subnav-visible {
+		height: 100px;
+		visibility: visible;
+		display: block;
+		height: auto;
+		margin-left: 20px;
+	}
+
+	.subnav {
+		position: relative !important;
+		top: 0 !important;
+		background-color: #fff;
+	}
+}
