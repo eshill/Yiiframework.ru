@@ -730,15 +730,13 @@ table td {
 @media (max-width: 770px) {
   .subtitle-text {
     margin-bottom: 0; } }
-.subtitle-stick {
-  opacity: 1; }
-  .subtitle-stick .subtitle-text {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 18px;
-    margin: 10px 0; }
-  .subtitle-stick .lang-group {
-    margin: 5px 0; }
+.title-stick .subtitle-text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 10px 0; }
+.title-stick .lang-group {
+  margin: 5px 0; }
 
 .lang-group {
   margin: 25px 0;
