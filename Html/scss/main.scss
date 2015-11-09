@@ -25,141 +25,7 @@ $red-dark:        darken(#f84823, 10%);
 
 
 
-// Login & Registration pages
 
-.bg-textured {
-	background-image: url("../i/pttrn_dark.jpg");
-	color: #fff;
-}
-
-.login-reg {
-
-	.cont-border {
-		min-height: 650px;
-		border-top: 1px solid $blue-gray;
-		border-bottom: 1px solid $blue-gray;
-	}
-
-	.p-login-title {
-		margin: 80px auto 50px auto;
-		text-align: center;
-		font-size: 48px;
-		font-weight: 100;
-	}
-
-	.p-login-win {
-		width: 120%;
-		margin-left: -10%;
-		border-top: 3px solid $green;
-		background-color: rgba(255,255,255,1);
-		color: $text-gray;
-		padding: 30px 30px 15px 30px;
-	}
-
-	.p-reg-win {
-		width: 120%;
-		margin-left: -10%;
-		border-top: 3px solid $blue;
-		background-color: rgba(255,255,255,1);
-		color: $text-gray;
-		padding: 30px;
-	}
-
-	@media screen and (max-width: 770px) {
-		.p-login-win, .p-reg-win {
-			width: 100%;
-			margin: 0 auto;
-		}
-	}
-
-	.p-login-social {
-		width: 120%;
-		margin-left: -10%;
-		background-color: rgba(255,255,255,.6);
-		padding: 25px;
-		margin-bottom: 150px;
-	}
-
-	.login-social {
-		overflow: hidden;
-		text-align: center;
-
-		.github {
-			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMyAxNiI+ICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIuODkzIDYuNzFjLjA2LS4zNzYuMDk4LS43ODguMTA3LTEuMjUtLjAwNC0xLjk4LS45NjctMi42OC0xLjE1Mi0zLjAxLjI3My0xLjUtLjA0Ni0yLjE4My0uMTk0LTIuNDE3LS41NDUtLjE5LTEuOS40OTItMi42MzguOTczLTEuMjA2LS4zNDctMy43NTMtLjMxMy00LjcxLjA5QzIuNTQ2LS4xNDcgMS42MTMuMDQzIDEuNjEzLjA0M3MtLjYwMyAxLjA2NC0uMTYgMi42MkMuODczIDMuMzkuNDQgMy45MDUuNDQgNS4yN2MwIC4zMjUuMDIuNjM0LjA1Ni45My41IDIuNTg2IDIuNTggMy43IDQuNjI1IDMuODkzLS4zMDUuMjMtLjY3NC42NjYtLjcyNSAxLjE3LS4zODcuMjQ2LTEuMTY0LjMyNy0xLjc3LjE0LS44NDYtLjI2My0xLjE3LTEuOTE0LTIuNDQtMS42OC0uMjczLjA1Mi0uMjIuMjMuMDIuMzgyLjM4NS4yNDcuNzUuNTUzIDEuMDMgMS4yMS4yMTUuNTA0LjY3IDEuNDAzIDIuMTAyIDEuNDAzLjU2OCAwIC45NjctLjA2Ni45NjctLjA2NnMuMDEgMS4yODQuMDEgMS43ODVjMCAuNTc2LS43OS43MzgtLjc5IDEuMDE0IDAgLjExLjI2Mi4xMjQuNDcyLjEyNC40MTYgMCAxLjI4LS4zNCAxLjI4LS45NCAwLS40NzYuMDA4LTIuMDc1LjAwOC0yLjM1NSAwLS42MTMuMzMzLS44MDguMzMzLS44MDhzLjA0IDMuMjY4LS4wOCAzLjcwNmMtLjE0Mi41MTUtLjQuNDQyLS40LjY3IDAgLjM0MyAxLjA0LjA4NCAxLjM4NC0uNjY0LjI2Ny0uNTg0LjE0OC0zLjc4OC4xNDgtMy43ODhsLjI3OC0uMDA2cy4wMDMgMS40NjctLjAwNyAyLjEzOGMtLjAxLjY5NC0uMDg0IDEuNTcyLjMzNSAxLjk4Ni4yNzYuMjczIDEuMTE4Ljc1IDEuMTE4LjMxNCAwLS4yNTQtLjU5LS40NjMtLjU5LTEuMTV2LTMuMTZjLjM2IDAgLjQzMyAxLjA0LjQzMyAxLjA0bC4xMyAxLjkzcy0uMDg3LjcwNC43NzIuOTk4Yy4zMDMuMTA0Ljk1Mi4xMzMuOTgyLS4wNDMuMDMtLjE3NS0uNzgzLS40MzUtLjc5LS45OC0uMDA1LS4zMy4wMTQtLjUyNy4wMTQtMS45NyAwLTEuNDQ0LS4xOTctMS45NzgtLjg4My0yLjQwMyAxLjk5LS4yIDQuMDYtMS4wNzYgNC40My0zLjM3N3oiLz48L3N2Zz4=);
-			background-size: 13px 16px;
-			background-repeat: no-repeat;
-			background-position: center;
-
-			&:hover {
-				border: 2px solid transparent;
-				background-color: #a437a6;
-			}
-
-			&:active, &:focus {
-				border: none;
-				box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-				background-color: #a437a6;
-			}
-		}
-
-		.twitter {
-			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxMCI+ICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTQuMTc2IDQuNDM1Yy4yMjIuMDkyLjUwOC4xNTcuODYuMTk1LjE2LjAxNC4zMTcuMDIuNDcuMDIuMTggMCAuMzQ2LS4wMS41LS4wMy0uMTkzLjE3Ni0uNDQuMzI4LS43NC40NThzLS42OS4xOTUtMS4xNy4xOTVjLS4yMTguNzk4LS42MjQgMS41MTYtMS4yMiAyLjE0Ny0uNTkuNjM0LTEuMjk1IDEuMTU4LTIuMTEgMS41Ny0uODE3LjQxMy0xLjcxNC43LTIuNjk1Ljg2My0uNTUuMDk3LTEuMS4xNDUtMS42Ni4xNDUtLjQxIDAtLjgzLS4wMy0xLjI1LS4wODgtLjk3LS4xMjItMS45LS40MS0yLjgtLjg2MkMxLjQ2IDguNTk4LjY4IDcuOTUzIDAgNy4xMTVjLjM4LjMzLjgyNC41ODcgMS4zMy43NjUuNTA2LjE3OCAxLjAzMi4yNyAxLjU4LjI3LjU0NCAwIDEuMDgtLjEgMS42MS0uMjkuNTI0LS4xOS45OTYtLjQ5IDEuNDE3LS44OS0uMDguMDEtLjE2LjAxOC0uMjQuMDE4LS4xNTQgMC0uMjkzLS4wMjYtLjQyLS4wNzgtLjItLjA3Ny0uMzM4LS4xODQtLjQxMy0uMzE3LS4wNzctLjEzMi0uMDc3LS4yOCAwLS40MzguMDc2LS4xNi4yNy0uMy41ODQtLjQyMy0uMTA2LjAxLS4yMS4wMTgtLjMxLjAxOC0uMTU0IDAtLjI5Ni0uMDEzLS40MjctLjAzNy0uMjItLjA0LS40MS0uMTA3LS41Ny0uMi0uMTYtLjA5Ni0uMy0uMTk4LS40LS4zMDgtLjEtLjExLS4xOS0uMjMtLjI3LS4zNTIuMTQtLjExNy4yOS0uMjA2LjQ1LS4yNjYuMTctLjA2Mi4zOS0uMS42Ni0uMTEzLS42MS0uMTMtMS4wNS0uMzIzLTEuMzEtLjU3NC0uMjYtLjI1NC0uNDItLjU0Ni0uNDktLjg3Ny4xOC0uMDI3LjM2LS4wNTcuNTUtLjA5Mi4xOC0uMDMuMzMtLjA0LjQ0LS4wMS0uNTItLjI1LS44OC0uNTUtMS4wOS0uODgtLjE4LS4yOS0uMjctLjU4LS4yNy0uODQgMC0uMDMgMC0uMDYuMDEtLjEuOTQuMzIgMS43My42MSAyLjM3Ljg4LjY1LjI3IDEuMjIuNTMgMS43Mi43OC4yLjA4LjM5LjIuNTguMzVsLjYzLjUzYy4xNC0uMzQuMjktLjY4LjQ2LTEuMDMuMTgtLjM0LjM2LS42Ni41Ni0uOTguMTk4LS4zMS40MTgtLjU5LjY2NS0uODUuMjUtLjI2LjUzLS40Ny44NC0uNjQtLjAxLjE1LS4wOS4zLS4yNC40NC4xOC0uMTUuMzc3LS4yNy41ODYtLjM2LjIxLS4wOS40My0uMTUuNjYzLS4xOC0uMDI3LjE1LS4xMzUuMjctLjMzLjM2Ny0uMTkzLjA5My0uMzYuMTY2LS41MS4yMTcuMDU0LS4wMS4xNi0uMDQ2LjMxNS0uMS4xNTctLjA1Ni4zMjQtLjEwNy41LS4xNS4xOC0uMDQ3LjMzNy0uMDguNDgtLjA5LjE0NC0uMDEuMjMuMDEuMjU1LjA4LjA0LjA3Ni4wMi4xNDMtLjA3LjItLjA4My4wNTQtLjE5LjEtLjMxMy4xNC0uMTIuMDQtLjI0Ny4wNy0uMzY4LjA5OC0uMTMuMDI1LS4yMS4wNDUtLjI1LjA1NWwtLjM3LjEzYy4wNy0uMDEuMTQ2LS4wMS4yMi0uMDEuMzA1IDAgLjYwNi4wNS45LjE0LjM2LjExLjY5LjI4Ljk5LjUwNy4yOTYuMjI2LjU2LjQ5My43ODYuOC4yMjMuMzA0LjM5LjYzLjUuOThsLjA0LjE1NWMuMDEuMDUzLjAyMy4xMS4wNC4xNzUuMTMuMDQuMjkuMDY2LjQ4LjA3Ni4xODMuMDEuMzcgMCAuNTUyLS4wMy4xOC0uMDMuMzUtLjA2LjQ5Ni0uMTEuMTUtLjA0LjI3LS4wOS4zNTctLjEyLS4xMDQuMjUzLS4zMS40NjUtLjYxMy42NC0uMzA3LjE3LS42ODUuMjY2LTEuMTM3LjI5M3oiLz48L3N2Zz4=);
-			background-size: 16px 10px;
-			background-repeat: no-repeat;
-			background-position: center;
-
-			&:hover {
-				border: 2px solid transparent;
-				background-color: #1fafea;
-			}
-
-			&:active, &:focus {
-				border: none;
-				box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-				background-color: #1fafea;
-			}
-		}
-
-		.facebook {
-			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4LjY4OCAxNiI+ICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNOC4zNTIuMDAybC0yLjA4LS4wMDRjLTIuMzM1IDAtMy44NDUgMS41NDYtMy44NDUgMy45NHYxLjgxNUguMzM3Yy0uMTggMC0uMzI3LjE0Ni0uMzI3LjMyNnYyLjYzYzAgLjE4LjE0Ni4zMjYuMzI3LjMyNmgyLjA5djYuNjM4YzAgLjE4LjE0Ny4zMjcuMzI3LjMyN2gyLjcyOGMuMTggMCAuMzI2LS4xNDUuMzI2LS4zMjZWOS4wMzdoMi40NDVjLjE4IDAgLjMyNy0uMTQ2LjMyNy0uMzI3VjYuMDhjMC0uMDg3LS4wMzQtLjE3LS4wOTUtLjIzMi0uMDYyLS4wNi0uMTQ1LS4wOTUtLjIzMi0uMDk1SDUuODF2LTEuNTRjMC0uNzQuMTc1LTEuMTE1IDEuMTQtMS4xMTVoMS40Yy4xODIgMCAuMzI4LS4xNDcuMzI4LS4zMjdWLjMzYzAtLjE4LS4xNDYtLjMyNi0uMzI2LS4zMjZ6Ii8+PC9zdmc+);
-			background-size: 9px 16px;
-			background-repeat: no-repeat;
-			background-position: center;
-
-			&:hover {
-				border: 2px solid transparent;
-				background-color: #3b5998;
-			}
-
-			&:active, &:focus {
-				border: none;
-				box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-				background-color: #3b5998;
-			}
-		}
-	}
-
-	.login-social a {
-		width: 50px;
-		height: 50px;
-		margin-right: 25px;
-		display: inline-block;
-		border-radius: 25px;
-		transition: all 0.1s ease;
-		background-color: $blue-gray;
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
-	@media screen and (max-width: 770px) {
-		.p-login-social {
-			width: 100%;
-			margin: 0 auto 25px auto;
-		}
-	}
-}
 
 
 // _tags-default.scss
@@ -238,6 +104,41 @@ table td {
 	}
 }
 
+.has-success {
+	input {
+		border-color: $green !important;
+
+		&:focus {
+			border-color: #fff !important;
+			box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, 
+			$green 0px 0px 10px 0px !important;
+		}
+	}
+
+	.control-label, .help-block {
+		color: $green-dark;
+	}
+}
+
+.has-error {
+	
+
+	input {
+		border-color: $red !important;
+
+		&:focus {
+			border-color: #fff !important;
+			box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, 
+			$red 0px 0px 10px 0px !important;
+		}
+	}
+
+	.control-label, .help-block {
+		color: $red-dark;
+	}
+}
+
+
 
 
 .page-wrapper {
@@ -259,6 +160,10 @@ table td {
 
 	li {margin-bottom: 15px}
 }
+
+
+
+
 
 // _buttons.scss
 
@@ -377,4 +282,5 @@ table td {
 @import "_index-content.scss";
 @import "_code-highlighting.scss"; // code-highlighting 
 @import "_docs.scss"; // documentation section pages
+@import "_login-reg.scss"; // Login & Registration pages
 @import "_footer.scss"; // all pages footer
