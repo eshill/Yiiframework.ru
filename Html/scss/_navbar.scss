@@ -150,9 +150,13 @@
 	margin: 12px 0;
 }
 
+.b-enter:hover {
+	box-shadow: rgba(255, 255, 255, 1) 0px 0px 10px 0px;
+}
+
 .b-enter:active,
 .b-enter:focus {
-	box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px inset, rgba(255, 255, 255, 1) 0px 0px 10px 0px;
 }
 
 .enter-key {
@@ -170,5 +174,6 @@
 }
 
 .user-avatar {
-	background-image: url(../tmp_img/user_avatar.png);
+	background-image: url(../tmp_img/user_avatar.jpg);
+	background-size: cover;
 }

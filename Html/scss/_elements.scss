@@ -192,10 +192,10 @@
 }
 
 .alert-warning {
-	background-color: #ffe7ce;
-	border-left: 2px solid #ff8c00;
-	color: #cc7000;
-	a {color: #cc7000;text-decoration: underline}
+	background-color: $yellow;
+	border-left: 2px solid $orange;
+	color: $orange-dark;
+	a {color: $orange;text-decoration: underline}
 }
 
 .alert-danger {
