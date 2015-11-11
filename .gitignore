@@ -3,3 +3,12 @@ Localhost_Yii.sh
 *.psd
 
 *.sh
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# windows thumbnail cache
+Thumbs.db
