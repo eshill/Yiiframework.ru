@@ -471,7 +471,7 @@ table td {
     height: 50px;
     border-radius: 25px;
     padding: 9px 13px;
-    margin: 12px 50px 12px 0;
+    margin: 12px 75px 12px 0;
     background-color: #526884;
     border: none; }
     .navbar-default .navbar-toggle .icon-bar {
@@ -507,7 +507,7 @@ table td {
   height: 50px;
   border-radius: 25px;
   background-color: #fff;
-  margin: 12px 0; }
+  margin: 12px 15px; }
 
 .b-enter:hover {
   box-shadow: white 0px 0px 10px 0px; }
