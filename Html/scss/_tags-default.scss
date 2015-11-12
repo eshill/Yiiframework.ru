@@ -1,0 +1,72 @@
+// _tags-default.scss
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {color: $blue;}
+
+p {margin: 10px 0 15px 0;}
+
+h1 {
+	font-size: 33px;
+	margin: 15px 0 15px 0;
+}
+
+h2 {
+	font-size: 28px;
+	margin: 25px 0;
+}
+h3 {
+	font-size: 22px;
+	margin: 25px 0;
+}
+
+h4 {
+	font-size: 18px; 
+	font-weight: bold;
+	margin: 25px 0;
+}
+
+code {
+	font-family: "Courier New", Courier, mono;
+	font-weight: bold;
+	color: $text-gray-dark;
+	background-color: $gray-light;
+}
+
+pre, .b-code {
+	font-family: "Courier New", Courier, mono;
+	border:none;
+	background-color: $gray-light;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 0;
+	border-left: 2px solid $gray !important;
+	padding: 25px 25px 25px 40px;
+	margin: 25px 0;
+}
+
+blockquote {
+	border:none;
+	background-color: $yellow-light;
+	font-size: 14px;
+	border-radius: 0;
+	border-left: 2px solid $yellow !important;
+	padding: 25px 25px 25px 40px;
+	margin: 25px 0;
+
+	.b-code {
+		font-size: 13px !important;
+		opacity: .8;
+		line-height: 1.3em;
+	}
+}
+
+.b-code {
+	display: block;
+}
+
+table td {
+	font-size: 14px;
+}

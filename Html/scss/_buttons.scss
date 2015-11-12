@@ -1,0 +1,140 @@
+// _buttons.scss
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 2px solid transparent;
+	white-space: nowrap;
+	outline:none;
+	transition: all 0.1s ease;
+}
+
+.btn-default {
+	background-color: $gray-light;
+	color: $text-gray;
+	border-width: 1px;
+	&:hover {
+		background-color: transparent;
+		text-decoration: none;
+		border-color: $gray;
+		border-width: 1px;
+		color: $text-gray;
+	}
+	&:active, &:focus {
+		background-color: transparent;
+		text-decoration: none;
+		border-color: $blue;
+		border-width: 1px;
+		color: $blue;
+	}
+}
+
+.btn-success {
+	background-color: $green;
+	&:hover {
+		background-color: $green-light;
+		border-color: $green;
+		color: $green-dark;
+	}
+
+	&:active, &:focus {
+		background-color: $green !important;
+		box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		border-color: $green-light !important;
+		color: #fff !important;
+		color: $green-dark !important;
+		outline: none !important;
+	}
+}
+
+.btn-primary {
+	background-color: $blue;
+	&:hover {
+		background-color: $blue-light;
+		border-color: $blue;
+		color: $blue-dark;
+	}
+
+	&:active, &:focus {
+		background-color: $blue !important;
+		box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		border-color: $blue-light !important;
+		color: #fff !important;
+		color: $blue-dark !important;
+		outline: none !important;
+	}
+}
+
+
+.btn-border-success {
+	border-color: $green;
+	color: $green-dark;
+	background-color: transparent;
+
+	&:hover {
+		background-color: $green;
+		color: #fff;
+	}
+
+	&:active, &:focus {
+		box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		border-color: $green-light;
+	}
+}
+
+.btn-border-primary {
+	border-color: $blue;
+	color: $blue-dark;
+	background-color: transparent;
+
+	&:hover {
+		background-color: $blue;
+		color: #fff;
+	}
+
+	&:active, &:focus {
+		box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		border-color: $blue-light;
+	}
+}
+
+.btn-border-danger {
+	border-color: $red;
+	color: $red-dark;
+	background-color: transparent;
+
+	&:hover {
+		background-color: $red;
+		color: #fff;
+	}
+
+	&:active, &:focus {
+		box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		border-color: $red-light;
+	}
+}
+
+.btn-lg {
+	height: 50px;
+	padding: 0 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 45px;
+
+	&:active, &:focus {
+		line-height: 48px;
+	}
+}
+
+.btn-sm {
+	// height: 25px;
+	border-width: 1px;
+	padding: 0 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	line-height: 24px;
+}

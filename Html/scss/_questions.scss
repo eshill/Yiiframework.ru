@@ -1,0 +1,440 @@
+// _questions.scss
+
+.q-h1 {
+	margin-top: 5px;
+}
+
+.page-cont-col .nav-tabs li {
+	margin-bottom: -1px;
+
+	a {
+		padding: 13px 20px;
+		transition: all .2s ease;
+	}
+}
+
+.questions-list {
+	margin-top: 50px;
+
+	.fixed {
+		border: 1px solid $blue;
+
+		.q-right {
+			border-left: 1px solid $blue;
+		}
+	}
+}
+
+.question-item {
+	border: 1px solid $gray-light;
+	margin-bottom: 25px;
+
+	.q-row {
+		display: flex;
+	}
+
+	.q-left {
+		padding: 25px 25px 20px 40px;
+
+		.q-description {
+			font-size: 14px;
+			line-height: 22px;
+			color: $text-gray-light;
+			margin: 0 0 25px 0;
+			overflow: hidden;
+			max-height: 70px;
+		}
+	}
+
+	.q-right {
+		border-left: 1px solid $gray-light;
+		padding: 25px 40px 25px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: $text-gray-light;
+		font-size: 13px;
+		text-align: center;
+
+		.green {
+			color: $green;
+		}
+
+		.q-number {
+			font-weight: 100;
+			font-size: 70px;
+			line-height: 60px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.question-item {
+		overflow: hidden;
+	}
+
+	.q-row {
+		flex-direction: column;
+		overflow: hidden;
+
+		.q-right {
+			border-top: 1px solid $gray-light;
+		}
+	}
+
+	.nav-tabs {
+		border: none;
+	}
+
+	.nav-tabs > li {
+		float: none;
+		border: 0;
+		text-align: center;
+	}
+
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+		border: none;
+	}
+}
+
+.q-info {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+
+	span {
+			margin-left: 10px;
+		}
+
+	.q-info-like {
+
+		svg {
+			width: 27px;
+			height: 24px;
+			fill: #fff;
+			stroke-width: 2px;
+			stroke: $text-gray;
+			float: left;
+			cursor:pointer;
+			transition: all .1s ease;
+
+			&:hover {stroke: $red;}
+			&:active, &:focus {stroke: $red; fill: $red;}
+		}
+	}
+
+	.active svg {
+		fill: $red;
+		stroke: $red;
+
+		&:hover {fill: lighten($red, 20%);}
+		&:active, &:focus {fill: #fff; stroke: $text-gray;}
+	}
+
+	.q-info-view {
+		svg {
+			width: 25px;
+			height: 22px;
+			fill: $text-gray;
+			float: left;
+			margin-left: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.q-info .q-info-like svg,
+	.q-info .q-info-view svg  {
+		width: 20px;
+		height: 18px;
+	}
+}
+
+.q-tags {
+	.title {
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+
+	a {margin-bottom: 5px;}
+}
+
+.tabbable {
+	margin: 50px 0;
+
+	.title {
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+}
+
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabs-right > .nav-tabs {
+  border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}
+
+.q-tools {
+	width: 125px;
+	float: right;
+
+	.btn-border-edit, .btn-border-del {
+		width: 50px;
+		padding: 6px 3px;
+		margin-left: 10px;
+
+		svg {
+			width: 24px;
+			height: 24px;
+			transition: all 0.1s ease;
+		}
+	}
+
+	.btn-border-edit svg {fill: $blue;}
+	.btn-border-edit:hover svg {fill: #fff;}
+
+	.btn-border-del svg {fill: $red; stroke-width: 1px; stroke: $red;}
+	.btn-border-del:hover svg {fill: #fff; stroke: #fff;}
+}
+
+.q-b {
+	font-weight: 700;
+	color: #gray;
+	margin-top: 50px;
+
+	sup {
+		color: $text-gray-light	;
+		font-weight: 400 !important;
+		font-size: 18px;
+	}
+}
+
+.q-comment-item {
+	border-bottom: 1px solid $gray-light;
+	padding-bottom: 25px;
+
+	.q-comment {
+		font-size: 14px;
+		line-height: 1.5em;
+	}
+}
+
+.q-comment-tools {
+	float: right;
+
+	a:last-child {color: $red;}
+}
+
+.q-view-info {
+	border-top: 1px solid $gray-light;
+	border-bottom: 1px solid $gray;
+	overflow: hidden;
+	padding: 25px 0;
+
+	.q-tags {
+		float: left;
+		margin: 0 25px;
+	}
+
+	.q-info {
+		margin-top: 0;
+		float: right;
+	}
+}
+
+.b-add-comment {
+	background-color: $gray-light;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.5s ease;
+
+	form {
+		margin: 25px;
+	}
+}
+
+.comm-visible {
+	height: 225px;
+}
+
+.answer-item {
+	.b-add-comment, .q-comment-item {
+		margin-left: 100px;
+	}
+}
+
+.a-userpic {
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background-color: $gray;
+	float: left;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+}
+
+.a-body {
+	display: block;
+	margin-left: 100px;
+	border-bottom: 1px solid $gray-light;
+}
+
+.ico_true {
+	fill: $gray;
+	margin-left: 15px;
+	color: $text-gray-light;
+	
+	svg {
+		width: 18px;
+		height: 14px;
+	}
+
+	&:hover, &:active {
+		fill: $green-light;
+		color: $green-light;
+		text-decoration: none;
+	}
+}
+
+.ico_true_green {
+	fill: $green;
+	color: $green;
+}
+
+.q-similar {
+	.q-info a.c-red:hover {color:$red;}
+}
+
+.similar-item {
+	margin-bottom: 35px;
+	line-height: 16px;
+
+	.post-info {
+		line-height: 1.2em;
+	}
+
+	.q-info {
+		font-size: 12px;
+
+		.q-info-like svg,
+		.q-info-view svg {
+			width: 16px;
+			height: 14px;
+		}
+	}
+}
+
+.hint-search svg,
+.hint-list svg,
+.hint-bubble svg {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.hint-search {fill:$blue; margin-top: 50px;}
+.hint-list {fill:$green;}
+.hint-bubble {fill:$orange;}

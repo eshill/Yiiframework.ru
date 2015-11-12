@@ -1,3 +1,35 @@
+.page-wrapper {
+	clear: both;
+	min-height: 700px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	.row div {
+		z-index: 1;
+	}
+
+	.pagination {
+		margin-bottom: 0;
+	}
+}
+
+.page-cont-col {
+	font-size: 16px;
+	line-height: 25px;
+	color: $text-gray;
+
+	li {margin-bottom: 15px}
+}
+
+.b-rel {
+	position: relative;
+}
+
+.hint-item {
+	margin-bottom: 50px;
+	font-size: 14px;
+}
+
 // Pages title header & search
 
 .sect-title {
@@ -217,4 +249,59 @@
 	border-left: 2px solid $blue;
 	color: $blue-dark;
 	a {color: $blue;text-decoration: underline}
+}
+
+// forms
+
+.checkbox {
+	margin-bottom: 25px;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-control {
+	border: 2px solid $gray;
+	border-radius: 5px;
+	box-shadow: none;
+
+	&:focus {
+		box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, 
+		rgba(23, 145, 218, 0.6) 0px 0px 10px 0px;
+		border: 2px solid #fff;
+	}
+}
+
+.has-success {
+	input {
+		border-color: $green !important;
+
+		&:focus {
+			border-color: #fff !important;
+			box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, 
+			$green 0px 0px 10px 0px !important;
+		}
+	}
+
+	.control-label, .help-block {
+		color: $green-dark;
+	}
+}
+
+.has-error {
+
+	input {
+		border-color: $red !important;
+
+		&:focus {
+			border-color: #fff !important;
+			box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 0px inset, 
+			$red 0px 0px 10px 0px !important;
+		}
+	}
+
+	.control-label, .help-block {
+		color: $red-dark;
+	}
 }
