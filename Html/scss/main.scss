@@ -36,8 +36,89 @@ $yellow-dark:		darken($yellow, 10%);
 .c-blue {color: $blue;}
 .c-red {color: $red;}
 
+
+
 // _projects.scss
 
+.project-item {
+	margin-bottom: 50px;
+
+	.project-cover {
+		display: block;
+		min-height: 150px;
+		background-color: $gray;
+		background-size: cover;
+
+		&:hover {
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
+		}
+	}
+
+	.project-title {
+		height: 43px;
+	}
+
+	.project-title-text {
+		line-height: 20px;
+		display: block;
+	}
+}
+
+.project-info {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	color: $text-gray;
+
+	span {
+			margin-left: 10px;
+		}
+
+	.p-info-like {
+		svg {
+			width: 20px;
+			height: 18px;
+			fill: #fff;
+			stroke-width: 2px;
+			stroke: $text-gray;
+			float: left;
+			cursor:pointer;
+			transition: all .1s ease;
+
+			&:hover {stroke: $red;}
+			&:active, &:focus {stroke: $red; fill: $red;}
+		}
+	}
+
+	.active svg {
+		fill: $red;
+		stroke: $red;
+
+		&:hover {fill: lighten($red, 20%);}
+		&:active, &:focus {fill: #fff; stroke: $text-gray;}
+	}
+
+	.p-info-view {
+		svg {
+			width: 20px;
+			height: 18px;
+			fill: $text-gray;
+			float: left;
+			margin-left: 20px;
+		}
+	}
+
+	.p-info-comment {
+		svg {
+			width: 20px;
+			height: 18px;
+			fill: $text-gray;
+			float: left;
+			margin-left: 20px;
+		}
+	}
+}
 
 
 

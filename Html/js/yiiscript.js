@@ -21,4 +21,15 @@ $("document").ready(function(){
 
 	$(".sect-title").sticky({ topSpacing: 0, bottomSpacing: 840, center:true, className:"title-stick" }); // Sticker page title
 	$(".subnav").sticky({ topSpacing: 140, bottomSpacing: 400, center:true, className:"subnav-stick" }); // Sticker page subnav
+
+	var obj = $('.project-title-text').ThreeDots();  // two rows in projects.html
+});
+
+// Ресайзам высоту блоков в разделе Проекты
+
+$(function(){
+	$('.project-cover').height($('.project-cover').width()/1.5);
+	$(window).resize(function(){
+	$('.project-cover').height($('.project-cover').width()/1.5);
+	});
 });
