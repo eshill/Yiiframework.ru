@@ -66,6 +66,35 @@
     float: left;
     margin-left: 20px; }
 
+.p-description {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 25px; }
+
+.grid-preview {
+  margin-top: 25px;
+  overflow: hidden; }
+
+.grid-p-item {
+  width: 30%;
+  float: left;
+  margin-bottom: 25px; }
+  .grid-p-item img {
+    width: 100%; }
+
+@media screen and (max-width: 770px) {
+  .grid-p-item {
+    width: 45%; } }
+@media screen and (max-width: 350px) {
+  .grid-p-item {
+    width: 45%; } }
+.p-info .q-tags {
+  margin-left: 0 !important; }
+
+.p-similar .project-item {
+  margin-bottom: 25px; }
+  .p-similar .project-item .project-title {
+    height: auto; }
+
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -257,6 +286,10 @@ table td {
 .hint-item {
   margin-bottom: 50px;
   font-size: 14px; }
+
+.break-word {
+  word-wrap: break-word;
+  overflow: hidden; }
 
 .sect-title {
   background-image: url(../i/pttrn_light.jpg);
@@ -516,7 +549,7 @@ table td {
     position: relative; } }
 @media screen and (max-width: 350px) {
   .navbar-brand {
-    margin-right: 0;
+    margin-right: 0 !important;
     width: 130px !important;
     background-repeat: no-repeat;
     background-position: center; } }
@@ -1078,7 +1111,8 @@ table td {
   font-size: 13px;
   margin-bottom: 15px; }
 .q-tags a {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-right: 5px; }
 
 .tabbable {
   margin: 50px 0; }

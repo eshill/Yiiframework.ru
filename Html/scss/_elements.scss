@@ -30,6 +30,11 @@
 	font-size: 14px;
 }
 
+.break-word {
+	word-wrap: break-word; 
+	overflow: hidden;
+}
+
 // Pages title header & search
 
 .sect-title {
