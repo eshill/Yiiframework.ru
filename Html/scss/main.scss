@@ -62,6 +62,8 @@ $yellow-dark:		darken($yellow, 10%);
 	.project-title-text {
 		line-height: 20px;
 		display: block;
+		word-wrap: break-word;
+		overflow: hidden;
 	}
 }
 

@@ -19,7 +19,9 @@
     height: 43px; }
   .project-item .project-title-text {
     line-height: 20px;
-    display: block; }
+    display: block;
+    word-wrap: break-word;
+    overflow: hidden; }
 
 .project-info {
   margin-top: 15px;
