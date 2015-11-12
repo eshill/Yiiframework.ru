@@ -11,7 +11,8 @@
     display: block;
     min-height: 150px;
     background-color: #e6e6e6;
-    background-size: cover; }
+    background-size: cover;
+    transition: all 0.1s ease; }
     .project-item .project-cover:hover {
       box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px; }
   .project-item .project-title {

@@ -48,6 +48,7 @@ $yellow-dark:		darken($yellow, 10%);
 		min-height: 150px;
 		background-color: $gray;
 		background-size: cover;
+		transition: all 0.1s ease;
 
 		&:hover {
 			box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
