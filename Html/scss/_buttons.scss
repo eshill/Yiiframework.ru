@@ -69,6 +69,24 @@
 	}
 }
 
+.btn-danger {
+	background-color: $red;
+	&:hover {
+		background-color: $red-light;
+		border-color: $red;
+		color: $red-dark;
+	}
+
+	&:active, &:focus {
+		background-color: $red !important;
+		box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		border-color: $red-light !important;
+		color: #fff !important;
+		color: $red-dark !important;
+		outline: none !important;
+	}
+}
+
 
 .btn-border-success {
 	border-color: $green;

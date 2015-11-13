@@ -130,7 +130,7 @@ $yellow-dark:		darken($yellow, 10%);
 
 .grid-preview {
 	margin-top: 25px;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .grid-p-item {
@@ -167,6 +167,47 @@ $yellow-dark:		darken($yellow, 10%);
 		}
 	}
 }
+
+.hint-tech svg,
+.hint-2x svg,
+.hint-cactus svg {
+	height: 50px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.hint-tech svg {width: 50px;fill:$blue; margin-top: 50px;}
+.hint-2x svg {width: 70px;fill:$green;}
+.hint-cactus svg {width: 50px;fill:$orange;}
+
+.sm-ico-del {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-color: $red;
+	position: absolute;
+	border-radius: 12px;
+	right: -12px;
+	top: -12px;
+	transition: all 0.1s ease;
+
+	&:hover {background-color: $red-light;}
+	&:active, &:focus {background-color: $red-dark}
+
+	svg {
+		fill: #fff;
+		width: 16px;
+		height: 16px;
+		margin: 4px 0 0 4px;
+	}
+}
+
+.btns-group-topborder {
+	padding-top: 25px;
+	border-top: 2px solid $gray-light;
+}
+
+
 
 
 

@@ -71,8 +71,7 @@
   padding-bottom: 25px; }
 
 .grid-preview {
-  margin-top: 25px;
-  overflow: hidden; }
+  margin-top: 25px; }
 
 .grid-p-item {
   width: 30%;
@@ -94,6 +93,50 @@
   margin-bottom: 25px; }
   .p-similar .project-item .project-title {
     height: auto; }
+
+.hint-tech svg,
+.hint-2x svg,
+.hint-cactus svg {
+  height: 50px;
+  display: block;
+  margin-bottom: 10px; }
+
+.hint-tech svg {
+  width: 50px;
+  fill: #1690da;
+  margin-top: 50px; }
+
+.hint-2x svg {
+  width: 70px;
+  fill: #84cf2f; }
+
+.hint-cactus svg {
+  width: 50px;
+  fill: #ff8c00; }
+
+.sm-ico-del {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #f84823;
+  position: absolute;
+  border-radius: 12px;
+  right: -12px;
+  top: -12px;
+  transition: all 0.1s ease; }
+  .sm-ico-del:hover {
+    background-color: #fa7154; }
+  .sm-ico-del:active, .sm-ico-del:focus {
+    background-color: #e12d07; }
+  .sm-ico-del svg {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+    margin: 4px 0 0 4px; }
+
+.btns-group-topborder {
+  padding-top: 25px;
+  border-top: 2px solid #f2f2f2; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -212,6 +255,20 @@ table td {
     border-color: #1aa7ff !important;
     color: #fff !important;
     color: #116da6 !important;
+    outline: none !important; }
+
+.btn-danger {
+  background-color: #f84823; }
+  .btn-danger:hover {
+    background-color: #fa7154;
+    border-color: #f84823;
+    color: #e12d07; }
+  .btn-danger:active, .btn-danger:focus {
+    background-color: #f84823 !important;
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    border-color: #fa7154 !important;
+    color: #fff !important;
+    color: #e12d07 !important;
     outline: none !important; }
 
 .btn-border-success {
