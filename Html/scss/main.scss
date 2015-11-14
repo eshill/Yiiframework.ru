@@ -37,178 +37,215 @@ $yellow-dark:		darken($yellow, 10%);
 .c-red {color: $red;}
 
 
+// _community.scss
+// Community & User Profile sections
 
-// _projects.scss
-
-.project-item {
+.c-user-item {
 	margin-bottom: 50px;
+	overflow: hidden;
 
-	.project-cover {
+	.c-user-avatar {
 		display: block;
-		min-height: 150px;
-		background-color: $gray;
-		background-size: cover;
-		transition: all 0.1s ease;
-
-		&:hover {
-			box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
-		}
-	}
-
-	.project-title {
-		height: 43px;
-	}
-
-	.project-title-text {
-		line-height: 20px;
-		display: block;
-		word-wrap: break-word;
+		width: 120px;
+		height: 120px;
 		overflow: hidden;
+		border-radius: 60px;
+		border: 1px solid $gray-light;
+		margin-bottom: 15px;
+
+		img {width: 100%;}
 	}
-}
 
-.project-info {
-	margin-top: 15px;
-	display: flex;
-	flex-direction: row;
-	font-size: 14px;
-	color: $text-gray;
+	.c-user-name {
+		display: block;
+		// float: left;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
 
-	span {
-			margin-left: 10px;
-		}
+	.c-user-info {
+		line-height: 25px;
+		font-size: 14px;
 
-	.p-info-like {
-		svg {
-			width: 20px;
-			height: 18px;
-			fill: #fff;
-			stroke-width: 2px;
-			stroke: $text-gray;
+		.name {
+			font-weight: 100;
+			width: 100px;
+			display: block;
 			float: left;
-			cursor:pointer;
-			transition: all .1s ease;
-
-			&:hover {stroke: $red;}
-			&:active, &:focus {stroke: $red; fill: $red;}
+			margin-bottom: 5px;
+			line-height: 20px;
+			clear: both;
 		}
-	}
 
-	.active svg {
-		fill: $red;
-		stroke: $red;
-
-		&:hover {fill: lighten($red, 20%);}
-		&:active, &:focus {fill: #fff; stroke: $text-gray;}
-	}
-
-	.p-info-view {
-		svg {
-			width: 20px;
-			height: 18px;
-			fill: $text-gray;
+		.info {
+			width: 100px;
+			display: block;
 			float: left;
-			margin-left: 20px;
+			line-height: 20px;
+			margin-bottom: 5px;
 		}
 	}
+}
 
-	.p-info-comment {
-		svg {
-			width: 20px;
-			height: 18px;
-			fill: $text-gray;
+@media screen and (max-width: 1200px) {
+	.c-user-item {
+		clear: both;
+		overflow: hidden;
+		margin-bottom: 50px;
+
+		.c-user-avatar {
 			float: left;
-			margin-left: 20px;
+			clear: both;
+			margin-right: 25px;
+		}
+
+		.c-user-name {
+			float: none;
+		}
+
+		.c-user-info {
+			float: left;
 		}
 	}
 }
 
-.p-description {
-	border-bottom: 1px solid $gray-light;
-	padding-bottom: 25px;
-}
-
-.grid-preview {
-	margin-top: 25px;
-	// overflow: hidden;
-}
-
-.grid-p-item {
-	width: 30%;
-	float: left;
-	margin-bottom: 25px;
+.big-user-avatar {
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	overflow: hidden;
+	border: 1px solid $gray;
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	margin-left: -80px;
 
 	img {
 		width: 100%;
 	}
 }
 
-@media screen and (max-width: 770px) {
-	.grid-p-item {
-		width: 45%;
+.c-block-user {
+	border: 1px solid $gray;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 50px;
+	margin-bottom: 25px;
+
+	.block-user-bg {
+		height: 110px;
+		background-color: $gray-light;
+		// background-image: url(../i/bg_pttrn.png);
+		margin-bottom: 50px;
+		border-bottom: 1px solid $gray;
 	}
-}
 
-@media screen and (max-width: 350px) {
-	.grid-p-item {
-		width: 45%;
+	.block-user-name {
+		text-align: center;
+		overflow: hidden;
 	}
-}
 
-.p-info .q-tags {margin-left: 0 !important;}
+	.block-user-info {
+		.name {
+			display: block;
+			float: left;
+			text-align: right;
+			width: 50%;
+			padding-right: 10px;
+		}
 
-.p-similar {
-
-	.project-item {
-		margin-bottom: 25px;
-
-		.project-title {
-			height: auto;
+		.info {
+			display: block;
+			float: right;
+			width: 50%;
+			padding-left: 10px;
 		}
 	}
 }
 
-.hint-tech svg,
-.hint-2x svg,
-.hint-cactus svg {
-	height: 50px;
-	display: block;
-	margin-bottom: 10px;
-}
+.user-projects,
+.user-questions,
+.user-posts {
+	border-bottom: 1px solid $gray-light;
+	margin-bottom: 25px;
 
-.hint-tech svg {width: 50px;fill:$blue; margin-top: 50px;}
-.hint-2x svg {width: 70px;fill:$green;}
-.hint-cactus svg {width: 50px;fill:$orange;}
+	h2 {
+		float: left;
+	}
 
-.sm-ico-del {
-	display: block;
-	width: 24px;
-	height: 24px;
-	background-color: $red;
-	position: absolute;
-	border-radius: 12px;
-	right: -12px;
-	top: -12px;
-	transition: all 0.1s ease;
+	sup {
+		font-size: 16px;
+		color: $text-gray-light;
+	}
 
-	&:hover {background-color: $red-light;}
-	&:active, &:focus {background-color: $red-dark}
-
-	svg {
-		fill: #fff;
-		width: 16px;
-		height: 16px;
-		margin: 4px 0 0 4px;
+	.q-info {
+		margin-top: 25px;
 	}
 }
 
-.btns-group-topborder {
-	padding-top: 25px;
-	border-top: 2px solid $gray-light;
+@media screen and (max-width: 500px) {
+	.user-projects .q-info {
+		display: none;
+	}
 }
 
+.user-posts {
+	border: none;
+	margin-bottom: 0;
 
+	.post-item {
+		font-size: 13px;
+		line-height: 18px;
+		max-height: 200px;
 
+		p {
+			font-size: 13px;
+			line-height: 18px;
+		}
+
+		.post-title {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 18px;
+		}
+
+		.post-title-photo {
+			display: none;
+		}
+
+		h1, h2, h3, h4 {
+			float: none; 
+			margin: 10px 0;
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+}
+
+.upe-right-col {
+	position: relative;
+	overflow: hidden;
+
+	.well {
+		border-radius: 0; 
+		padding-bottom: 25px;
+	}
+
+	.big-user-avatar {
+		top: 0;
+	}
+
+	h3 {
+		margin-top: 2px;
+	}
+}
+
+.upe-avatar {
+	width: 125px;
+	display: block !important;
+	margin: 180px auto 26px auto !important;
+	overflow: hidden;
+}
 
 
 @import "_tags-default.scss";
@@ -221,5 +258,6 @@ $yellow-dark:		darken($yellow, 10%);
 @import "_code-highlighting.scss"; // code-highlighting 
 @import "_docs.scss"; // documentation section pages
 @import "_questions.scss"; // Question & Answer section
+@import "_projects.scss"; // Projects section
 @import "_login-reg.scss"; // Login & Registration pages
 @import "_footer.scss"; // all pages footer

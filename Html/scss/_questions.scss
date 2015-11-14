@@ -416,10 +416,12 @@
 	.q-info {
 		font-size: 12px;
 
+		span {line-height: 18px;}
+
 		.q-info-like svg,
 		.q-info-view svg {
-			width: 16px;
-			height: 14px;
+			width: 20px;
+			height: 18px;
 		}
 	}
 }
