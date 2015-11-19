@@ -1,0 +1,35 @@
+// _variables.scss
+
+$gray:				#e6e6e6;
+$gray-light:		#f2f2f2;
+$gray-dark:			darken($gray, 10%);
+
+$text-gray:			#505050;
+$text-gray-light:	#888;
+$text-gray-dark:	#333;
+
+$green:				#84cf2f;
+$green-light:		#95e835;
+$green-dark:		#649c24;
+
+$blue:				#1690da;
+$blue-light:		#1aa7ff;
+$blue-dark:			#116da6;
+$blue-darkness:		#2e3c50;
+$blue-gray:			#566c86;
+
+$red:				#f84823;
+$red-dark:			darken($red, 10%);
+$red-light:			lighten($red, 10%);
+
+$orange:			#ff8c00;
+$orange-dark:		darken($orange, 10%);
+$orange-light:		lighten($orange, 10%);
+
+
+$yellow:			#FADE75;
+$yellow-light:		#FEF8E2;
+$yellow-dark:		darken($yellow, 10%);
+
+.c-blue {color: $blue;}
+.c-red {color: $red;}

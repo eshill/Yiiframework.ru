@@ -1423,13 +1423,13 @@ table td {
     line-height: 25px;
     font-size: 14px; }
     .c-user-item .c-user-info .name {
-      font-weight: 100;
       width: 100px;
       display: block;
       float: left;
       margin-bottom: 5px;
       line-height: 20px;
-      clear: both; }
+      clear: both;
+      color: #888; }
     .c-user-item .c-user-info .info {
       width: 100px;
       display: block;
